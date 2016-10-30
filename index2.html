@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="refresh" content="120">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/roboto.min.css" rel="stylesheet">
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/ripples.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Bus/Train Tracker</title>
+</head>
+
+<body>
+    <div class="container wide">
+        <!--<img src="img/logo.jpg" width = "100%"/>-->
+
+        &nbsp;
+        <!--Curr time-->
+        <h1 class="text-center" id="time"></h1>
+        <!--60 bus-->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="panel panel-default west60-panel">
+                    <div class="panel-heading">60 Blue Island/26th <em><strong>Westbound</strong></em> to <strong>Cicero</strong> and <strong>24th Place</strong>
+                    </div>
+                    <div class="panel-body errWest60">
+                        Expected Bus Arrival Times:
+                        <div class="west60"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default east60-panel">
+                    <div class="panel-heading">60 Blue Island/26th <em><strong>Eastbound</strong></em> to <strong>Randolph</strong> &amp; <strong>Harbor Dr</strong>
+                    </div>
+                    <div class="panel-body errEast60">
+                        Expected Bus Arrival Times:
+                        <div class="east60"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default west18-panel">
+                    <div class="panel-heading">18 16th-18th <em><strong>Westbound</strong></em> to <strong>16th</strong> and <strong>Cicero</strong>
+                    </div>
+                    <div class="panel-body errWest18">
+                        Expected Bus Arrival Times:
+                        <div class="west18"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--18 bus-->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="panel panel-default east18-panel">
+                    <div class="panel-heading">18 16th-18th <em><strong>Eastbound</strong></em> to <strong>Michigan Avenue</strong>
+                    </div>
+                    <div class="panel-body errEast18">
+                        Expected Bus Arrival Times:
+                        <div class="east18"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default pl-panel">
+                    <div class="panel-heading">Pink Line to <strong>54th</strong> and <strong>Cermak</strong></div>
+                    <div class="panel-body errPl54">
+                        Expected Train Arrival Times:
+                        <div class="Pl54"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default pl-panel">
+                    <div class="panel-heading">Pink Line to <strong>Loop</strong></div>
+                    <div class="panel-body errPlLoop">
+                        Expected Train Arrival Times:
+                        <div class="PlLoop"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--Pink Line-->
+        <div class="row">
+            <!--<div class="panel panel-default uber-panel">
+                <div class="panel-heading">Uber Arrival Times</div>
+                <div class="panel-body">
+                    Expected Uber Arrival Times:
+                    <div class="uber"></div>
+                </div>
+            </div>-->
+        </div>
+
+    </div>
+    &nbsp;
+
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <script src="js/ripples.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.material.init();
+        });
+
+    </script>
+    <script src="js/60Bus.js"></script>
+    <script src="js/18Bus.js"></script>
+    <script src="js/pinkLine.js"></script>
+    <script src="js/clockDisplay.js"></script>
+    <script src="js/uber.js"></script>
+    <script type="text/javascript" src="js/date.js"></script>
+</body>
+
+</html>
